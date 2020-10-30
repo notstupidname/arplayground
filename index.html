@@ -7,7 +7,7 @@
 		<script src="/webcomponents-loader.js"></script>
 	</head>
 	<body>
-		<model-viewer style="width=90vw;height=90vh" src="/assets/models/dom.glb" poster="../../assets/ShopifyModels/Chair.png" shadow-intensity="1" ar ar-scale="fixed" camera-controls alt="A 3D model carousel">
+		<model-viewer src="/assets/models/dom.glb" poster="../../assets/ShopifyModels/Chair.png" shadow-intensity="1" ar ar-scale="fixed" camera-controls alt="A 3D model carousel">
 
 			<button slot="ar-button" id="ar-button">
 				View in your space
@@ -46,6 +46,8 @@
 			model-viewer {
 				background-color: #eee;
 				--poster-color: #eee;
+				width: 100vw;
+				height: 90vh;
 			}
 
 			#ar-button {
