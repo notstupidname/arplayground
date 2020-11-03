@@ -7,7 +7,7 @@
 		<script src="/webcomponents-loader.js"></script>
 	</head>
 	<body>
-		<model-viewer src="/assets/models/domik.glb" ios-src="/assets/models/domik.usdz" poster="../../assets/ShopifyModels/Chair.png" exposure="0.2" shadow-intensity="1" ar ar-scale="fixed" camera-controls alt="A 3D model carousel">
+		<model-viewer src="/assets/models/domik.glb" ios-src="/assets/models/domik.usdz" poster="../../assets/ShopifyModels/Chair.png" exposure="0.2" shadow-intensity="1" ar ar-modes="quick-look" ar-scale="fixed" camera-controls alt="A 3D model carousel">
 
 			<button slot="ar-button" id="ar-button">
 				View in your space
@@ -51,7 +51,7 @@
 			}
 
 			#ar-button {
-				background-image: url(../../assets/ic_view_in_ar_new_googblue_48dp.png);
+				background-image: url(/assets/48dp.png);
 				background-repeat: no-repeat;
 				background-size: 20px 20px;
 				background-position: 12px 50%;
