@@ -7,7 +7,7 @@
 		<script src="/webcomponents-loader.js"></script>
 	</head>
 	<body>
-		<model-viewer src="/assets/models/domik.glb" ios-src="/assets/models/201103.usdz" exposure="1" environment-image="/assets/env/sky.hdr" shadow-intensity="1" ar ar-modes="webxr quick-look" ar-scale="fixed" camera-controls>
+		<model-viewer src="/assets/models/subs.glb" ios-src="/assets/models/201103.usdz" exposure="1" environment-image="/assets/env/3point.hdr" shadow-intensity="1" ar ar-modes="webxr quick-look" ar-scale="fixed" camera-controls>
 
 			<button slot="ar-button" id="ar-button">
 				View in your space
@@ -16,10 +16,6 @@
 			<div id="ar-prompt">
 				<img src="/assets/hand.png">
 			</div>
-
-			<button class="Hotspot" slot="hotspot-2" data-position="-4.324987975130398m 1.2021516892381827m -11.636093223070818m" data-normal="-1m -1.9984034659620757e-23m 2.2204460492503042e-16m" data-visibility-attribute="visible">
-				<div class="HotspotAnnotation">window</div>
-			</button>
 
 		</model-viewer>
 
@@ -95,64 +91,6 @@
 				animation: circle 4s linear infinite;
 			}
 
-			.Hotspot {
-				background: #fff;
-				border-radius: 32px;
-				border: 0;
-				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-				box-sizing: border-box;
-				cursor: pointer;
-				height: 24px;
-				padding: 8px;
-				position: relative;
-				transition: opacity 0.3s;
-				width: 24px;
-			}
-
-			.Hotspot:not([data-visible]) {
-				background: transparent;
-				border: 4px solid #fff;
-				box-shadow: none;
-				height: 32px;
-				pointer-events: none;
-				width: 32px;
-			}
-
-			.Hotspot:focus {
-				border: 4px solid rgb(0, 128, 200);
-				height: 32px;
-				outline: none;
-				width: 32px;
-			}
-
-			.Hotspot>* {
-				opacity: 1;
-				transform: translateY(-50%);
-			}
-
-			.HotspotAnnotation {
-				background: #fff;
-				border-radius: 4px;
-				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-				color: rgba(0, 0, 0, 0.8);
-				display: block;
-				font-family: Futura, Helvetica Neue, sans-serif;
-				font-size: 18px;
-				font-weight: 700;
-				left: calc(100% + 1em);
-				max-width: 128px;
-				padding: 0.5em 1em;
-				position: absolute;
-				top: 50%;
-				width: max-content;
-			}
-
-			.Hotspot:not([data-visible])>* {
-				opacity: 0;
-				pointer-events: none;
-				transform: translateY(calc(-50% + 4px));
-				transition: transform 0.3s, opacity 0.3s;
-			}
 
 		</style>
 		<script type="module" src="/model-viewer.min.js"></script>
